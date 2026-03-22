@@ -1,6 +1,100 @@
 .app {
-  max-width: 1280px;
+  max-width: 480px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem 1.5rem;
   text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background: #1e1e1e;
+  color: #fff;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23aaa' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+
+select:focus {
+  outline: none;
+  border-color: #60a5fa;
+}
+
+.status {
+  margin-top: 2rem;
+  color: #aaa;
+}
+
+.status.error {
+  color: #f87171;
+}
+
+.card {
+  margin-top: 2rem;
+  background: #1e1e1e;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid #333;
+}
+
+.flag {
+  width: 90px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+  margin: 0.75rem 0 0.2rem;
+  font-size: 1.6rem;
+}
+
+.capital {
+  color: #888;
+  margin: 0 0 1.75rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.stat .value {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.stat .label {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.condition {
+  color: #60a5fa;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
 }
